@@ -1,0 +1,6 @@
+<h1> Welcome to your profile </h1>
+<%=@user.username%>
+
+<%= button_to "Start your search", new_search_path, method: :get %>
+<%= button_to "My CodeWords", code_words_path, method: :get%>
+<%= button_to "Edit Profile", edit_user_path(@user), method: :get%>
