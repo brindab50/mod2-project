@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_20_192816) do
+ActiveRecord::Schema.define(version: 2020_01_21_144725) do
 
   create_table "code_words", force: :cascade do |t|
     t.string "name"
@@ -26,9 +26,9 @@ ActiveRecord::Schema.define(version: 2020_01_20_192816) do
   end
 
   create_table "searches", force: :cascade do |t|
-    t.string "keyewords"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "keywords"
   end
 
   create_table "users", force: :cascade do |t|

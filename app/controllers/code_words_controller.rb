@@ -1,4 +1,5 @@
 class CodeWordsController < ApplicationController
+    
     def index
         @code_words = CodeWord.all
     end
@@ -6,4 +7,5 @@ class CodeWordsController < ApplicationController
     def show
         @code_word = CodeWord.find(params[:id])
     end
+    
 end
